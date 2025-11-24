@@ -1,5 +1,5 @@
-📘 SMS Spam Classification using LSTM – README
-📌 Project Overview
+📘 **SMS Spam Classification using LSTM – README**
+📌 **Project Overview**
 
 This project builds an SMS Spam Classifier using Deep Learning (LSTM).
 The model reads short text messages and predicts whether they are:
@@ -7,9 +7,6 @@ The model reads short text messages and predicts whether they are:
 Ham (0) → Normal message
 
 Spam (1) → Unwanted promotional or fraudulent message
-<<<<<<< HEAD
-=======
-
 It uses:
 
 Python
@@ -24,7 +21,7 @@ Confusion Matrix + Performance Metrics
 
 This project demonstrates a complete workflow of natural language processing, sequence modeling, and deep learning classification.
 
-🧠 Why LSTM?
+🧠 **Why LSTM?**
 
 SMS messages are sequences of words, and meaning depends on order.
 Example:
@@ -41,7 +38,7 @@ captures sequence patterns
 
 handles text context better than simple models
 
-🚀 Features
+🚀 **Features**
 
 ✔ Complete cleaning of raw SMS text
 ✔ Tokenization + Padding
@@ -51,7 +48,7 @@ handles text context better than simple models
 ✔ Confusion matrix and metrics
 ✔ Saved model + tokenizer for future use
 
-🗂️ Dataset
+🗂️ **Dataset**
 
 The project uses the popular SMS Spam Collection Dataset, which contains:
 
@@ -71,7 +68,7 @@ If using Kaggle version:
 Column names may appear as v1 (label), v2 (message).
 The script automatically renames them.
 
-🧹 Text Preprocessing Pipeline
+🧹 **Text Preprocessing Pipeline**
 
 The script performs the following steps:
 
@@ -95,7 +92,7 @@ Join tokens back into a clean sentence
 
 This improves signal quality for the LSTM.
 
-🔢 Tokenization + Padding
+🔢 **Tokenization + Padding**
 
 Keras Tokenizer converts words → integers.
 
@@ -107,9 +104,9 @@ OOV token: <OOV> (handles unknown words)
 
 Padding ensures fixed-length inputs for the network.
 
-🧱 Model Architecture
+🧱 **Model Architecture**
 
-The LSTM model consists of:
+** The LSTM model consists of:**
 
 Embedding Layer (100 dimensions)
 Bidirectional LSTM (128 units)
@@ -140,7 +137,7 @@ EarlyStopping
 
 ModelCheckpoint (saves best model automatically)
 
-📊 Evaluation Metrics
+📊 **Evaluation Metrics**
 
 After training, the model generates:
 
@@ -155,7 +152,8 @@ F1-Score
 Confusion Matrix
 
 These help evaluate correctness on both ham and spam messages.
-🏁 Results (Typical Performance)
+
+🏁 **Results (Typical Performance)**
 
 Most runs achieve:
 
@@ -165,7 +163,7 @@ Precision (Spam): 90%+
 
 Recall (Spam): 85%+
 
-📝 Future Improvements
+📝 **Future Improvements**
 
 Use GRU or Transformer-based models
 
@@ -177,8 +175,9 @@ Deploy using Flask/FastAPI
 
 Create a web UI
 
-👤 Author
+👤 **Author**
 
-Dheeraj
+**Dheeraj Pathak**
+
 AIML Student & Android Developer
->>>>>>> 7451d44 (Final commit)
+
